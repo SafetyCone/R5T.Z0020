@@ -15,5 +15,10 @@ namespace R5T.Z0020
 			Identity = PackageIdentities.Instance.Microsoft_AspNetCore_Components_WebAssembly_Server,
 			Version = F0000.VersionOperator.Instance.From("6.0.11"),
 		};
+
+		public PackageReference[] ForWebBlazorServer => new[]
+		{
+			this.Microsoft_AspNetCore_Components_WebAssembly_Server,
+		};
 	}
 }
