@@ -9,6 +9,13 @@ namespace R5T.Z0020
 	[ValuesMarker]
 	public partial interface IPackages : IValuesMarker
 	{
+        public PackageReference Microsoft_AspNetCore_Components_Web => this.Microsoft_AspNetCore_Components_Web_6_0_11;
+        public PackageReference Microsoft_AspNetCore_Components_Web_6_0_11 => new PackageReference
+        {
+            Identity = PackageIdentities.Instance.Microsoft_AspNetCore_Components_Web,
+            Version = F0000.VersionOperator.Instance.From("6.0.11"),
+        };
+
         public PackageReference Microsoft_AspNetCore_Components_WebAssembly => this.Microsoft_AspNetCore_Components_WebAssembly_6_0_11;
         public PackageReference Microsoft_AspNetCore_Components_WebAssembly_6_0_11 => new PackageReference
         {
@@ -32,6 +39,11 @@ namespace R5T.Z0020
             Version = F0000.VersionOperator.Instance.From("6.0.11"),
         };
 
+
+        public PackageReference[] ForRazorClassLibrary => new[]
+        {
+            this.Microsoft_AspNetCore_Components_Web,
+        };
 
         public PackageReference[] ForWebBlazorServer => new[]
 		{
