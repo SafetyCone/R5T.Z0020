@@ -16,7 +16,7 @@ namespace R5T.Z0020
         public PackageReference Microsoft_AspNetCore_Components_Web_6_0_11 => new PackageReference
         {
             Identity = PackageIdentities.Instance.Microsoft_AspNetCore_Components_Web,
-            Version = F0000.VersionOperator.Instance.From("6.0.11"),
+            Version = Instances.VersionOperator.Parse("6.0.11"),
         };
 
         [Obsolete("See R5T.Z0050.")]
@@ -25,7 +25,7 @@ namespace R5T.Z0020
         public PackageReference Microsoft_AspNetCore_Components_WebAssembly_6_0_11 => new PackageReference
         {
             Identity = PackageIdentities.Instance.Microsoft_AspNetCore_Components_WebAssembly,
-            Version = F0000.VersionOperator.Instance.From("6.0.11"),
+            Version = Instances.VersionOperator.Parse("6.0.11"),
         };
 
         [Obsolete("See R5T.Z0050.")]
@@ -34,7 +34,7 @@ namespace R5T.Z0020
         public PackageReference Microsoft_AspNetCore_Components_WebAssembly_DevServer_6_0_11 => new PackageReference
 		{
 			Identity = PackageIdentities.Instance.Microsoft_AspNetCore_Components_WebAssembly_DevServer,
-			Version = F0000.VersionOperator.Instance.From("6.0.11"),
+			Version = Instances.VersionOperator.Parse("6.0.11"),
             // Prevent the development package from flowing through to any dependencies.
             PrivateAssets = AssetsTagValues.Instance.All,
 		};
@@ -45,7 +45,7 @@ namespace R5T.Z0020
         public PackageReference Microsoft_AspNetCore_Components_WebAssembly_Server_6_0_11 => new PackageReference
         {
             Identity = PackageIdentities.Instance.Microsoft_AspNetCore_Components_WebAssembly_Server,
-            Version = F0000.VersionOperator.Instance.From("6.0.11"),
+            Version = Instances.VersionOperator.Parse("6.0.11"),
         };
 
 
